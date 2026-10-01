@@ -48,5 +48,6 @@ try{
   $('question-form').addEventListener('submit',e=>{e.preventDefault();compare($('question').value.trim());});
   document.querySelectorAll('[data-question]').forEach(button=>button.addEventListener('click',()=>{$('question').value=button.dataset.question;compare(button.dataset.question);}));
   $('policy-search').addEventListener('input',e=>library(e.target.value));
-  await compare($('question').value);
+  render([]);
+  $('status').textContent=live&&ai?'Enter a policy question to compare the three approaches. AI methods run only when you submit a question.':'Choose a saved comparison to view measured AI answers, or enter a question for the available live methods.';
 }catch(e){$('status').textContent='Unable to load policies: '+e.message;}

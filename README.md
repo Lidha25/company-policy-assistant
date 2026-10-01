@@ -1,6 +1,6 @@
 # Company Policy Assistant
 
-Uses the supplied `company_policies.csv` (98 records) to compare keyword search, an LLM with the full CSV, and an LLM with a persistent embedding vector index. Includes a local Slack Socket Mode bot and a static website suitable for GitHub Pages.
+Uses the supplied `company_policies.csv` (98 records) to compare keyword search, an LLM with the full CSV, and an LLM with a persistent embedding vector index. Includes a local Slack Socket Mode bot and a Node website server that can run locally or on a web host.
 
 ## Run locally
 
@@ -40,9 +40,9 @@ Policy IDs P001–P098 are generated from CSV row order, and source row numbers 
 
 ## Publish the website
 
-The `dist` folder contains only public site assets, policy data, and recorded results. The published static site offers live rules-based search and lets visitors inspect measured AI answers by selecting a recorded question. Arbitrary live AI questions require the local server; GitHub Pages cannot execute the server. No API key is sent to visitors.
+The `dist` folder is a static build for GitHub Pages: it displays saved AI comparisons and supports live rules-based search, but it cannot run Gemini calls. To let visitors ask new questions using the full-context and vector methods, deploy the complete Node server with the site, for example as a Render Web Service. Follow `RENDER_SETUP.md`. The server keeps Gemini calls on the server, serves the page and API from one origin, and limits each IP to 12 AI requests per minute. The public endpoint can still use your Gemini quota, so keep the key only in the host's secret settings and monitor usage.
 
-Follow `UPLOAD_GUIDE.md` to upload the prepared files to your private repository. Uploading does not trigger this project's deployment workflow. The workflow runs only when you manually choose Run workflow. Set your name in `student.json` before the final build; `STUDENT_NAME` is an optional environment override. GitHub Pages from a private repository requires an eligible paid GitHub plan. Keep the repository private if Pages is unavailable; a separate static hosting service can host the `dist` folder. A deployed website can expose policy content even while the source repository remains private. The current preparation does not publish either.
+GitHub Pages can continue to host the static comparison separately. For the interactive hosted version, use the Render URL. The Render service redeploys from the GitHub branch when you push changes. Review `UPLOAD_GUIDE.md` for repository preparation and `GEMINI_SETUP.md` for local testing. Set your name in `student.json` before the final build; `STUDENT_NAME` is an optional environment override.
 
 ## Slack setup
 
