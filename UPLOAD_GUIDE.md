@@ -1,6 +1,6 @@
 # Upload the prepared files yourself
 
-This is a preparation package, not a completed submission. No live AI results have been added. Keep your repository PRIVATE.
+This is a preparation package, not a completed submission. The website includes the saved 12-question Gemini benchmark and an AI-assisted answer review that still needs your verification. Keep your repository PRIVATE.
 
 ## 1. Extract the package
 
@@ -29,7 +29,7 @@ Uploading does not start the website or Slack bot. The included publishing workf
 ## 4. Remaining work, when you choose to continue
 
 - Put your student name in `student.json` before building the final website. No name has been guessed.
-- Configure your API key locally in `.env`, run the real benchmark, review unsupported claims and answer relevance, and revise the two paragraphs in `COMPARISON.md` using the results. The current AI entries honestly say they have not run.
+- Review the saved answers and unsupported-claim labels in `REVIEW.md` and `public/benchmark.json` against the CSV. Confirm the two paragraphs in `COMPARISON.md` still accurately describe the results before submitting.
 - Rebuild and upload the updated website/results. The static site supports live keyword search and saved AI comparisons. Live AI questions need the local server or separate backend hosting.
 - For GitHub Pages from a PRIVATE repository, GitHub requires Pro, Team, or Enterprise. If Settings → Pages asks for an upgrade, leave the repository private and choose a separate website host later. You do not need to pay or change visibility just to upload source. See https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages.
 - If your plan supports Pages and you decide to publish: Settings → Pages → Source: GitHub Actions; then Actions → Publish policy comparison → Run workflow. Publishing may make the website and included CSV content public even though the repository is private. Confirm the intended audience first.
