@@ -1,0 +1,14 @@
+{
+  "name": "company-policy-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "test": "node --test",
+    "benchmark": "node --env-file-if-exists=.env scripts/benchmark.mjs",
+    "build": "node scripts/build.mjs",
+    "slack": "node --env-file-if-exists=.env slack.mjs"
+  }
+}
