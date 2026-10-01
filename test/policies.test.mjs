@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {parseCSV,loadPolicies} from '../lib/policies.mjs';
+import {rulesAnswer} from '../lib/rules.mjs';
+import {cosine,answer} from '../lib/engine.mjs';
+test('Loads all 98 policies with unique stable row references',async()=>{const p=await loadPolicies();assert.equal(p.length,98);assert.equal(new Set(p.map(x=>x.id)).size,98);assert.equal(p[0].csv_row,2);});
+test('CSV handles quoted commas, escaped quotes and newlines',()=>{const p=parseCSV('title,department,policy_text,category\r\n"A, B",HR,"Say ""hello""\nand leave",Workplace\r\n');assert.equal(p[0].title,'A, B');assert.equal(p[0].policy_text,'Say "hello"\nand leave');});
+test('Rejects malformed CSV',()=>assert.throws(()=>parseCSV('title,department,policy_text,category\na,b,c')));
+test('Returns exact policy text with no AI tokens',async()=>{const r=rulesAnswer('How many vacation days?',await loadPolicies());assert.equal(r.policies[0].title,'Vacation Policy');assert.equal(r.answer,r.policies[0].policy_text);assert.equal(r.total_tokens,0);});
+test('Unrelated question abstains',async()=>assert.equal(rulesAnswer('Which dinosaur won the lottery?',await loadPolicies()).abstained,true));
+test('Cosine similarity handles identical, orthogonal and zero vectors',()=>{assert.equal(cosine([1,0],[1,0]),1);assert.equal(cosine([1,0],[0,1]),0);assert.equal(cosine([0,0],[1,0]),0);assert.throws(()=>cosine([1],[1,2]));});
+test('Missing credentials do not generate fake LLM results',async()=>{const previous=process.env.GEMINI_API_KEY;delete process.env.GEMINI_API_KEY;try{const result=await answer('full','Hello',[]);assert.equal(result.status,'unavailable');assert.equal(result.total_tokens,null);}finally{if(previous)process.env.GEMINI_API_KEY=previous;}});

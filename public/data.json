@@ -1,0 +1,793 @@
+{
+  "student": "",
+  "policies": [
+    {
+      "id": "P001",
+      "csv_row": 2,
+      "title": "Performance Review Policy",
+      "department": "Sales",
+      "policy_text": "Employees receive formal performance reviews annually.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P002",
+      "csv_row": 3,
+      "title": "Dress Code Policy",
+      "department": "Facilities",
+      "policy_text": "Employees are expected to dress in business casual attire.",
+      "category": "Workplace"
+    },
+    {
+      "id": "P003",
+      "csv_row": 4,
+      "title": "Warranty Policy",
+      "department": "Sales",
+      "policy_text": "Products are covered under warranty for one year.",
+      "category": "Customer Service"
+    },
+    {
+      "id": "P004",
+      "csv_row": 5,
+      "title": "Account Management Policy",
+      "department": "Sales",
+      "policy_text": "Accounts must be reviewed quarterly.",
+      "category": "Customer Service"
+    },
+    {
+      "id": "P005",
+      "csv_row": 6,
+      "title": "Anti-Harassment Policy",
+      "department": "Marketing",
+      "policy_text": "Harassment of any kind is not tolerated.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P006",
+      "csv_row": 7,
+      "title": "Recognition Program Policy",
+      "department": "Facilities",
+      "policy_text": "Employees may nominate peers for recognition awards.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P007",
+      "csv_row": 8,
+      "title": "Software Installation Policy",
+      "department": "Sales",
+      "policy_text": "Only approved software may be installed on company devices.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P008",
+      "csv_row": 9,
+      "title": "Workplace Accommodation Policy",
+      "department": "Finance",
+      "policy_text": "Employees may request reasonable accommodations.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P009",
+      "csv_row": 10,
+      "title": "Data Privacy Policy",
+      "department": "Operations",
+      "policy_text": "Employees must protect customer data and follow privacy regulations.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P010",
+      "csv_row": 11,
+      "title": "Work From Abroad Policy",
+      "department": "Facilities",
+      "policy_text": "Employees may work abroad for up to 30 days with approval.",
+      "category": "Remote Work"
+    },
+    {
+      "id": "P011",
+      "csv_row": 12,
+      "title": "File Naming Policy",
+      "department": "Marketing",
+      "policy_text": "Files must follow naming conventions for easy retrieval.",
+      "category": "Operations"
+    },
+    {
+      "id": "P012",
+      "csv_row": 13,
+      "title": "Company Vehicle Policy",
+      "department": "Legal",
+      "policy_text": "Use of company vehicles must be logged and approved.",
+      "category": "Operations"
+    },
+    {
+      "id": "P013",
+      "csv_row": 14,
+      "title": "Onboarding Policy",
+      "department": "Sales",
+      "policy_text": "New hires must complete onboarding within their first week.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P014",
+      "csv_row": 15,
+      "title": "Legal Hold Policy",
+      "department": "IT",
+      "policy_text": "Legal holds must be applied to relevant documents.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P015",
+      "csv_row": 16,
+      "title": "Budget Planning Policy",
+      "department": "HR",
+      "policy_text": "Departments must submit budgets by Q4.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P016",
+      "csv_row": 17,
+      "title": "Holiday Schedule Policy",
+      "department": "Facilities",
+      "policy_text": "Company holidays are published annually and observed accordingly.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P017",
+      "csv_row": 18,
+      "title": "Support Ticket Policy",
+      "department": "Operations",
+      "policy_text": "Support tickets must be resolved within SLA.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P018",
+      "csv_row": 19,
+      "title": "Supplier Evaluation Policy",
+      "department": "Facilities",
+      "policy_text": "Suppliers must be evaluated annually.",
+      "category": "Operations"
+    },
+    {
+      "id": "P019",
+      "csv_row": 20,
+      "title": "Parking Policy",
+      "department": "HR",
+      "policy_text": "Parking spaces are assigned and must be used accordingly.",
+      "category": "Workplace"
+    },
+    {
+      "id": "P020",
+      "csv_row": 21,
+      "title": "Equal Opportunity Policy",
+      "department": "HR",
+      "policy_text": "The company is committed to equal opportunity employment.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P021",
+      "csv_row": 22,
+      "title": "Customer Interaction Policy",
+      "department": "Operations",
+      "policy_text": "Employees must maintain professionalism in all customer interactions.",
+      "category": "Customer Service"
+    },
+    {
+      "id": "P022",
+      "csv_row": 23,
+      "title": "Customer Feedback Policy",
+      "department": "Operations",
+      "policy_text": "Customer feedback must be logged and reviewed.",
+      "category": "Customer Service"
+    },
+    {
+      "id": "P023",
+      "csv_row": 24,
+      "title": "Marketing Approval Policy",
+      "department": "Operations",
+      "policy_text": "Marketing materials must be approved before release.",
+      "category": "Operations"
+    },
+    {
+      "id": "P024",
+      "csv_row": 25,
+      "title": "Remote Work Policy",
+      "department": "Facilities",
+      "policy_text": "Employees may work remotely up to three days per week with manager approval.",
+      "category": "Remote Work"
+    },
+    {
+      "id": "P025",
+      "csv_row": 26,
+      "title": "Code of Conduct",
+      "department": "Legal",
+      "policy_text": "All employees must adhere to professional behavior standards.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P026",
+      "csv_row": 27,
+      "title": "Meeting Room Booking Policy",
+      "department": "Sales",
+      "policy_text": "Meeting rooms must be booked in advance using the portal.",
+      "category": "Workplace"
+    },
+    {
+      "id": "P027",
+      "csv_row": 28,
+      "title": "Internal Communication Policy",
+      "department": "IT",
+      "policy_text": "Use company channels for internal communication.",
+      "category": "Operations"
+    },
+    {
+      "id": "P028",
+      "csv_row": 29,
+      "title": "Mobile Device Policy",
+      "department": "IT",
+      "policy_text": "Employees may request company-issued mobile devices for work.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P029",
+      "csv_row": 30,
+      "title": "Training Reimbursement Policy",
+      "department": "Sales",
+      "policy_text": "Employees may be reimbursed for approved external training.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P030",
+      "csv_row": 31,
+      "title": "Client Gift Policy",
+      "department": "HR",
+      "policy_text": "Client gifts must comply with company guidelines.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P031",
+      "csv_row": 32,
+      "title": "Campaign Review Policy",
+      "department": "HR",
+      "policy_text": "Marketing campaigns must be reviewed quarterly.",
+      "category": "Operations"
+    },
+    {
+      "id": "P032",
+      "csv_row": 33,
+      "title": "Employee Referral Policy",
+      "department": "Finance",
+      "policy_text": "Employees may refer candidates for open positions.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P033",
+      "csv_row": 34,
+      "title": "Offer Letter Policy",
+      "department": "Marketing",
+      "policy_text": "Offer letters must follow approved templates.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P034",
+      "csv_row": 35,
+      "title": "Work Anniversary Recognition Policy",
+      "department": "Marketing",
+      "policy_text": "Employees are recognized on their work anniversaries.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P035",
+      "csv_row": 36,
+      "title": "Conflict of Interest Policy",
+      "department": "Marketing",
+      "policy_text": "Employees must disclose any potential conflicts of interest.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P036",
+      "csv_row": 37,
+      "title": "Business Continuity Policy",
+      "department": "HR",
+      "policy_text": "Departments must maintain business continuity plans.",
+      "category": "Operations"
+    },
+    {
+      "id": "P037",
+      "csv_row": 38,
+      "title": "System Downtime Policy",
+      "department": "Operations",
+      "policy_text": "Planned downtimes are communicated in advance.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P038",
+      "csv_row": 39,
+      "title": "Hardware Upgrade Policy",
+      "department": "IT",
+      "policy_text": "Hardware upgrades must be requested through IT.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P039",
+      "csv_row": 40,
+      "title": "Exit Interview Policy",
+      "department": "Facilities",
+      "policy_text": "Departing employees are encouraged to participate in an exit interview.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P040",
+      "csv_row": 41,
+      "title": "Security Incident Policy",
+      "department": "IT",
+      "policy_text": "Security incidents must be reported immediately.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P041",
+      "csv_row": 42,
+      "title": "Promotion Policy",
+      "department": "Finance",
+      "policy_text": "Promotions are based on performance and business needs.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P042",
+      "csv_row": 43,
+      "title": "Sales Incentive Policy",
+      "department": "Marketing",
+      "policy_text": "Sales incentives must be documented and approved.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P043",
+      "csv_row": 44,
+      "title": "Probation Period Policy",
+      "department": "Facilities",
+      "policy_text": "New hires are subject to a 90-day probation period.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P044",
+      "csv_row": 45,
+      "title": "Mentorship Program Policy",
+      "department": "HR",
+      "policy_text": "Employees may participate in the mentorship program.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P045",
+      "csv_row": 46,
+      "title": "Public Speaking Policy",
+      "department": "Legal",
+      "policy_text": "Employees must get approval before public speaking engagements.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P046",
+      "csv_row": 47,
+      "title": "Sustainability Policy",
+      "department": "Finance",
+      "policy_text": "Departments should consider sustainability in operations.",
+      "category": "Operations"
+    },
+    {
+      "id": "P047",
+      "csv_row": 48,
+      "title": "Remote Access Policy",
+      "department": "Legal",
+      "policy_text": "Remote access must use secure VPN connections.",
+      "category": "Remote Work"
+    },
+    {
+      "id": "P048",
+      "csv_row": 49,
+      "title": "Incident Response Policy",
+      "department": "Legal",
+      "policy_text": "Incident response procedures must be followed during disruptions.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P049",
+      "csv_row": 50,
+      "title": "Inventory Management Policy",
+      "department": "Sales",
+      "policy_text": "Inventory must be tracked and reconciled monthly.",
+      "category": "Operations"
+    },
+    {
+      "id": "P050",
+      "csv_row": 51,
+      "title": "Asset Disposal Policy",
+      "department": "Sales",
+      "policy_text": "IT assets must be disposed of securely.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P051",
+      "csv_row": 52,
+      "title": "Office Access Policy",
+      "department": "HR",
+      "policy_text": "Access badges must be worn and not shared.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P052",
+      "csv_row": 53,
+      "title": "Product Return Policy",
+      "department": "Marketing",
+      "policy_text": "Returns must follow the documented return process.",
+      "category": "Customer Service"
+    },
+    {
+      "id": "P053",
+      "csv_row": 54,
+      "title": "Email Signature Policy",
+      "department": "HR",
+      "policy_text": "All employees must use the approved email signature format.",
+      "category": "Operations"
+    },
+    {
+      "id": "P054",
+      "csv_row": 55,
+      "title": "Cloud Storage Policy",
+      "department": "Operations",
+      "policy_text": "Use approved cloud storage for company documents.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P055",
+      "csv_row": 56,
+      "title": "Shipping Policy",
+      "department": "HR",
+      "policy_text": "Shipping must use approved carriers.",
+      "category": "Operations"
+    },
+    {
+      "id": "P056",
+      "csv_row": 57,
+      "title": "Social Media Policy",
+      "department": "Finance",
+      "policy_text": "Employees must not disclose confidential information on social media.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P057",
+      "csv_row": 58,
+      "title": "Remote Meeting Policy",
+      "department": "Operations",
+      "policy_text": "Remote meetings should use approved video conferencing tools.",
+      "category": "Remote Work"
+    },
+    {
+      "id": "P058",
+      "csv_row": 59,
+      "title": "Interview Panel Policy",
+      "department": "HR",
+      "policy_text": "Interview panels must include diverse representation.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P059",
+      "csv_row": 60,
+      "title": "Expense Approval Policy",
+      "department": "Legal",
+      "policy_text": "All expenses over $500 require prior approval from Finance.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P060",
+      "csv_row": 61,
+      "title": "Customer Onboarding Policy",
+      "department": "HR",
+      "policy_text": "New customers must complete onboarding steps.",
+      "category": "Customer Service"
+    },
+    {
+      "id": "P061",
+      "csv_row": 62,
+      "title": "Document Retention Policy",
+      "department": "Legal",
+      "policy_text": "Documents must be retained according to legal requirements.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P062",
+      "csv_row": 63,
+      "title": "Cybersecurity Awareness Policy",
+      "department": "Marketing",
+      "policy_text": "Employees must complete annual cybersecurity training.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P063",
+      "csv_row": 64,
+      "title": "Corporate Card Policy",
+      "department": "Operations",
+      "policy_text": "Corporate card usage must comply with expense guidelines.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P064",
+      "csv_row": 65,
+      "title": "Flexible Hours Policy",
+      "department": "HR",
+      "policy_text": "Employees may adjust work hours with manager approval.",
+      "category": "Remote Work"
+    },
+    {
+      "id": "P065",
+      "csv_row": 66,
+      "title": "Sick Leave Policy",
+      "department": "Sales",
+      "policy_text": "Employees accrue sick leave monthly for personal or family illness.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P066",
+      "csv_row": 67,
+      "title": "Content Publishing Policy",
+      "department": "Marketing",
+      "policy_text": "Content must be reviewed before publishing.",
+      "category": "Operations"
+    },
+    {
+      "id": "P067",
+      "csv_row": 68,
+      "title": "Home Office Equipment Policy",
+      "department": "Legal",
+      "policy_text": "Employees may request ergonomic equipment for remote work.",
+      "category": "Remote Work"
+    },
+    {
+      "id": "P068",
+      "csv_row": 69,
+      "title": "Laptop Usage Policy",
+      "department": "IT",
+      "policy_text": "Company laptops must be used for business purposes only.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P069",
+      "csv_row": 70,
+      "title": "Procurement Policy",
+      "department": "Marketing",
+      "policy_text": "All purchases must follow the procurement process.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P070",
+      "csv_row": 71,
+      "title": "Bereavement Leave Policy",
+      "department": "Legal",
+      "policy_text": "Employees may take up to 5 days of bereavement leave.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P071",
+      "csv_row": 72,
+      "title": "Disaster Recovery Policy",
+      "department": "Facilities",
+      "policy_text": "IT must maintain disaster recovery protocols.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P072",
+      "csv_row": 73,
+      "title": "Petty Cash Policy",
+      "department": "Legal",
+      "policy_text": "Petty cash usage must be documented and reconciled monthly.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P073",
+      "csv_row": 74,
+      "title": "Brand Guidelines Policy",
+      "department": "Facilities",
+      "policy_text": "All materials must follow brand guidelines.",
+      "category": "Operations"
+    },
+    {
+      "id": "P074",
+      "csv_row": 75,
+      "title": "Contract Review Policy",
+      "department": "Finance",
+      "policy_text": "Contracts must be reviewed by Legal before signing.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P075",
+      "csv_row": 76,
+      "title": "Parental Leave Policy",
+      "department": "Marketing",
+      "policy_text": "Eligible employees may take up to 12 weeks of paid parental leave.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P076",
+      "csv_row": 77,
+      "title": "Background Check Policy",
+      "department": "Sales",
+      "policy_text": "All new hires must pass background checks.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P077",
+      "csv_row": 78,
+      "title": "Tuition Assistance Policy",
+      "department": "HR",
+      "policy_text": "Employees may apply for tuition assistance for approved programs.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P078",
+      "csv_row": 79,
+      "title": "Internet Usage Policy",
+      "department": "Finance",
+      "policy_text": "Company internet should be used for work-related activities only.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P079",
+      "csv_row": 80,
+      "title": "Whistleblower Policy",
+      "department": "HR",
+      "policy_text": "Employees may report unethical behavior anonymously.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P080",
+      "csv_row": 81,
+      "title": "Exit Clearance Policy",
+      "department": "Sales",
+      "policy_text": "Departing employees must complete exit clearance.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P081",
+      "csv_row": 82,
+      "title": "Vendor Management Policy",
+      "department": "Marketing",
+      "policy_text": "Vendors must be approved and reviewed annually.",
+      "category": "Operations"
+    },
+    {
+      "id": "P082",
+      "csv_row": 83,
+      "title": "Quality Assurance Policy",
+      "department": "HR",
+      "policy_text": "Products must pass quality checks before release.",
+      "category": "Operations"
+    },
+    {
+      "id": "P083",
+      "csv_row": 84,
+      "title": "Conference Attendance Policy",
+      "department": "Operations",
+      "policy_text": "Employees may attend conferences with prior approval.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P084",
+      "csv_row": 85,
+      "title": "Media Contact Policy",
+      "department": "Finance",
+      "policy_text": "Only authorized employees may speak to the media.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P085",
+      "csv_row": 86,
+      "title": "Diversity and Inclusion Policy",
+      "department": "Operations",
+      "policy_text": "The company promotes a diverse and inclusive workplace.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P086",
+      "csv_row": 87,
+      "title": "Workplace Safety Policy",
+      "department": "HR",
+      "policy_text": "Employees must follow safety procedures and report hazards.",
+      "category": "Workplace"
+    },
+    {
+      "id": "P087",
+      "csv_row": 88,
+      "title": "Workplace Cleanliness Policy",
+      "department": "Sales",
+      "policy_text": "Employees are responsible for maintaining clean workspaces.",
+      "category": "Workplace"
+    },
+    {
+      "id": "P088",
+      "csv_row": 89,
+      "title": "Helpdesk Ticket Policy",
+      "department": "Operations",
+      "policy_text": "All IT issues must be submitted via helpdesk ticket.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P089",
+      "csv_row": 90,
+      "title": "Meeting Etiquette Policy",
+      "department": "Facilities",
+      "policy_text": "Meetings should start on time and follow an agenda.",
+      "category": "Workplace"
+    },
+    {
+      "id": "P090",
+      "csv_row": 91,
+      "title": "Lead Management Policy",
+      "department": "Finance",
+      "policy_text": "Sales leads must be tracked in the CRM.",
+      "category": "Customer Service"
+    },
+    {
+      "id": "P091",
+      "csv_row": 92,
+      "title": "IT Asset Management Policy",
+      "department": "Facilities",
+      "policy_text": "All IT assets must be tracked and returned upon exit.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P092",
+      "csv_row": 93,
+      "title": "Password Policy",
+      "department": "HR",
+      "policy_text": "Passwords must be changed every 90 days and meet complexity requirements.",
+      "category": "IT & Security"
+    },
+    {
+      "id": "P093",
+      "csv_row": 94,
+      "title": "Travel Reimbursement Policy",
+      "department": "Facilities",
+      "policy_text": "Employees must submit receipts for travel expenses within 30 days.",
+      "category": "Finance & Expense"
+    },
+    {
+      "id": "P094",
+      "csv_row": 95,
+      "title": "Press Release Policy",
+      "department": "Legal",
+      "policy_text": "Press releases must be approved by Marketing and Legal.",
+      "category": "Compliance"
+    },
+    {
+      "id": "P095",
+      "csv_row": 96,
+      "title": "Vacation Policy",
+      "department": "IT",
+      "policy_text": "Employees receive 15 vacation days per year. Unused days may roll over.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P096",
+      "csv_row": 97,
+      "title": "Escalation Policy",
+      "department": "Facilities",
+      "policy_text": "Customer issues must follow the escalation process.",
+      "category": "Customer Service"
+    },
+    {
+      "id": "P097",
+      "csv_row": 98,
+      "title": "Job Posting Policy",
+      "department": "Legal",
+      "policy_text": "All internal job postings are listed on the company portal.",
+      "category": "Human Resources"
+    },
+    {
+      "id": "P098",
+      "csv_row": 99,
+      "title": "Company Property Policy",
+      "department": "Facilities",
+      "policy_text": "Employees must return company property upon exit.",
+      "category": "Operations"
+    }
+  ],
+  "comparison": [
+    "Across 12 questions from the 98 policy records, rules-based search averaged 13 ms with zero AI tokens, the full-database Gemini approach averaged 2.27 seconds and 4,433 generation tokens, and vector retrieval averaged 2.63 seconds and 417 generation tokens. Gemini did not report embedding token counts, so total vector tokens are unknown; index construction took 6.77 seconds and is excluded from question times. AI-assisted review found no unsupported factual claims in these samples. However, keyword search returned an irrelevant policy for the internet-payment question and did not clearly identify two missing numeric details. Vector retrieval omitted the password-complexity requirement. These results distinguish factual support from relevance and completeness.",
+    "For this small database, I prefer Gemini with the full policy text: it was faster in this sample and gave complete answers to the missing-information questions. Vector retrieval used about 91% fewer generation tokens, which may help as the database grows, but its embedding usage was unavailable and it missed one policy condition. These are 12 AI-assisted reviewed examples collected across resumed runs, not a guarantee of future accuracy; student verification of the support review is still needed. Both AI approaches rejected the instruction to invent 100 vacation days."
+  ]
+}
