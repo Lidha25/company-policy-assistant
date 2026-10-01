@@ -1,0 +1,3 @@
+# Gemini preparation checks
+
+13 offline tests passed, including full-context requests, vector retrieval, usage accounting, missing embedding usage, blocked responses, quota errors, CSV integrity, and manual-only deployment. JavaScript syntax checks passed. Mock API calls only: no live Gemini requests, website/server startup, Slack execution, uploads or deployment were performed. Existing .env was not read or changed. The Gemini package excludes .env and Git history. Live Gemini access, actual comparison results, support review and Slack integration remain unverified. The comparison contains exactly two paragraphs and is still provisional.
