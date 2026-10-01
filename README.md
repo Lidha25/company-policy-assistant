@@ -12,7 +12,7 @@ node scripts/build.mjs
 npm start
 ```
 
-Open http://localhost:3000. Add your Gemini API key to `.env` locally; never commit it or paste it into chat. Restart the server after editing `.env`. The configurable default model is `gemini-2.5-flash`; embedding model is `gemini-embedding-001`. API calls require account credits and model access.
+Open http://localhost:3000. Add your Gemini API key to `.env` locally; never commit it or paste it into chat. Restart the server after editing `.env`. The configurable default model is `gemini-3.8-flash`; embedding model is `gemini-embedding-001`. API calls require account credits and model access.
 
 ## Record the comparison
 
@@ -70,3 +70,6 @@ The bot acknowledges Socket Mode envelopes promptly, deduplicates event IDs, lim
 - https://ai.google.dev/gemini-api/docs/embeddings
 - https://docs.slack.dev/apis/events-api/using-socket-mode/
 - https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+
+## Resumable benchmark update
+The benchmark now preserves successful results and saves after each attempt. It makes at most two unfinished AI answers per invocation, waiting 30 seconds between them, and stops immediately on any failure (including 429 quota limits and 503 service unavailability). It does not automatically retry. Re-run the same command later to continue. Existing results are backed up under .cache/benchmark-backups; old failed attempts are retained in history. Timings exclude inter-answer delays; comparisons may span service conditions. The earlier instructions saying every rerun replaces the entire benchmark are superseded by this section. Do not repeatedly rerun after a quota failure; check Google AI Studio first. This change cannot remove provider limits or guarantee that two requests will fit your quota.
