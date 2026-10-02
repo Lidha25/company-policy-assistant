@@ -1,6 +1,6 @@
 # Company Policy Assistant
 
-Uses the supplied `company_policies.csv` (98 records) to compare keyword search, an LLM with the full CSV, and an LLM with a persistent embedding vector index. Includes a local Slack Socket Mode bot and a Node website server that can run locally or on a web host.
+Uses the supplied `company_policies.csv` (98 records) to compare keyword search, an LLM with the full CSV, and an LLM with an embedding vector index. The matching Gemini Embedding index for all 98 policies is bundled in `public/vector-index.json`, avoiding policy re-embedding on each hosted server restart; each vector question is still embedded live. Includes a local Slack Socket Mode bot and a Node website server that can run locally or on a web host.
 
 ## Run locally
 

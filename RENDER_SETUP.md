@@ -23,7 +23,8 @@ Do not put the API key in `.env.example`, website JavaScript, GitHub, or a messa
 
 The server limits each visitor IP to 12 AI requests per minute. This reduces accidental overuse but cannot stop all abuse of a public API endpoint. Anyone who can reach the page may use your Gemini quota. Monitor Google AI Studio usage and disable the Render service when the public demo is no longer needed. Free services may pause while idle, so the first request after a pause may take longer.
 
+The repository includes a validated Gemini Embedding index for the 98 policy rows. Render uses it directly and only calls the embedding model to turn each new question into a vector. If you replace or edit the CSV or change the embedding model, the stored index no longer matches and must be regenerated before deployment.
+
 ## Updating the live site
 
 Edit the project in your local repository, commit and push to `main`. Render will build and deploy that commit automatically. Confirm the new deployment is healthy before sharing the URL.
-
