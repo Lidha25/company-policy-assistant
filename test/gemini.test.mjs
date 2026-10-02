@@ -26,3 +26,10 @@ test('Blocked Gemini responses and quota failures are errors, not fabricated ans
  globalThis.fetch=async()=>({ok:false,status:429});await assert.rejects(answer('full','test',[]),/quota/i);}
  finally{globalThis.fetch=oldFetch;if(oldKey===undefined)delete process.env.GEMINI_API_KEY;else process.env.GEMINI_API_KEY=oldKey;}
 });
+test('Retries one temporary Gemini 503 and returns the successful answer (offline)',async()=>{
+ const oldFetch=globalThis.fetch,oldKey=process.env.GEMINI_API_KEY;process.env.GEMINI_API_KEY='test-only';let attempts=0;
+ try{
+  globalThis.fetch=async()=>{attempts++;if(attempts===1)return {ok:false,status:503};return {ok:true,json:async()=>({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({answer:'Recovered answer',policy_ids:[],abstained:true})}]}}],usageMetadata:{promptTokenCount:1,candidatesTokenCount:1,totalTokenCount:2}})};};
+  const result=await answer('full','Temporary outage test',[]);assert.equal(result.status,'ok');assert.equal(result.answer,'Recovered answer');assert.equal(attempts,2);
+ }finally{globalThis.fetch=oldFetch;if(oldKey===undefined)delete process.env.GEMINI_API_KEY;else process.env.GEMINI_API_KEY=oldKey;}
+});

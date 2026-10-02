@@ -8,7 +8,7 @@
 6. To view live answers locally, run npm start and open http://localhost:3000. Stop any older copy first so you do not view the previous provider version. Restart after changing .env.
 7. Review the recorded answers and finalize COMPARISON.md before submitting. Follow UPLOAD_GUIDE.md to upload the replacement files yourself, keeping the repository private.
 
-The benchmark performs generation and embedding requests. Google account quotas and billing apply. If you see HTTP 429, wait and check your quota before retrying. No automatic retries or hidden extra paid calls are performed.
+The benchmark performs generation and embedding requests. Google account quotas and billing apply. If you see HTTP 429, wait and check your quota before retrying. Temporary HTTP 503 service errors are retried up to two times with increasing pauses; quota errors (HTTP 429) are not retried. The benchmark does not automatically repeat a failed question after the retry limit is reached.
 
 Generation input, output, thinking and total token counts come from Gemini usageMetadata. Embedding counts are displayed only when returned by Gemini. Missing usage is not zero: the combined total and its average remain unavailable if embedding usage is missing; the known generation subtotal is still shown. Index build time and tokens are separate from per-query measurements.
 
