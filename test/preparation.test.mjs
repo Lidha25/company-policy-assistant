@@ -19,6 +19,17 @@ test('Prepared site retains all policy records and required assets',async()=>{
  assert.equal(benchmark.runs.length,12);
  for(const run of benchmark.runs)for(const result of run.results)if(result.status!=='ok'){assert.equal(result.total_tokens,null);assert.equal(result.response_ms,null);}
 });
+test('Unsupported-answer rates use only reviewed saved answers, and vector totals stay unavailable without embedding usage',async()=>{
+ const benchmark=JSON.parse(await readFile(new URL('public/benchmark.json',root),'utf8'));
+ assert.match(benchmark.review_method,/AI-assisted/);
+ for(const method of ['rules','full','vector']){
+  const results=benchmark.runs.flatMap(run=>run.results).filter(result=>result.method===method);
+  assert.equal(results.length,12);
+  assert.ok(results.every(result=>result.status==='ok'&&['supported','unsupported'].includes(result.review)));
+ }
+ const vector=benchmark.runs.flatMap(run=>run.results).filter(result=>result.method==='vector');
+ assert.ok(vector.every(result=>result.generation_tokens!=null&&result.embedding_tokens==null&&result.total_tokens==null));
+});
 test('Full-context integration uses all policies, real usage fields, and flags fabricated IDs (mocked API; no network)',async()=>{
  const oldFetch=globalThis.fetch,oldKey=process.env.GEMINI_API_KEY;const policies=await loadPolicies();
  process.env.GEMINI_API_KEY='offline-test-placeholder';
